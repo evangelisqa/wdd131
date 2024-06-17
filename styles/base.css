@@ -80,16 +80,35 @@ body{
     border-radius: 25px;
 }
 h2 {
-    background: #cdb4db;
+    background:#cdb4db;
     padding: 10px;
 }
-img {
+#img1 {
     border-radius: 50%;
     width: 150px;
-    float: right;
+    float: right;  
+    margin-right:10px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
+#img2{
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+body{ 
+    border: 3px solid;
+    display: flow-root;
+}
+
 p {
     font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 a {
     text-align: center;
