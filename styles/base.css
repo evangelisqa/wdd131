@@ -74,7 +74,7 @@ body{
 }
 .card{
     background: #fff;
-    width: 0 solid;
+    width: solid;
     height: 600px;
     margin: 10px;
     border-radius: 25px;
