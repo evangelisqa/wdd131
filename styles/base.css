@@ -77,15 +77,17 @@ body{
     margin: 10px;
     border-radius: 25px;
 }
-
 h2 {
-    background: #fef6f1;
+    background: #cdb4db;
     padding: 10px;
 }
 img {
     border-radius: 50%;
     width: 150px;
     float: right;
+}
+p {
+    font-size: 20px;
 }
 li {
     text-align:left;
