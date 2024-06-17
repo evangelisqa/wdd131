@@ -36,7 +36,7 @@ header h1 {
 header{
     background-color:#396E94;
     color: white;
-    padding: auto;
+    padding: 0;
 }
 
 nav  {
@@ -89,11 +89,12 @@ img {
 p {
     font-size: 20px;
 }
-li {
-    text-align:left;
+a {
+    text-align: center;
     margin-left: 10%;
     font-size: 25px;
     margin-top: 10%;
+
 }
 ul{
     float:left;
