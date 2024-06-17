@@ -74,7 +74,7 @@ body{
 }
 .card{
     background: #fff;
-    width: 800px;
+    width: auto solid;
     height: 600px;
     margin: 10px;
     border-radius: 25px;
@@ -117,9 +117,7 @@ a {
     margin-top: 10%;
 
 }
-ul{
-    float:left;
-}
+
 footer {
     padding:25px;
     background-color: #396E94;
