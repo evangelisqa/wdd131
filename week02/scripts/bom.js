@@ -7,3 +7,13 @@ li.textContent = input.value;
 deleteButton.textContent = 'X';
 li.append(eleteButton);
 list.append(li);
+
+buttonElement.addEventListener('click', function(){
+   document.click
+});
+buttonElement.addEventListener('keyup', function()){
+    document.keyup
+}
+document.addEventListener("DOMContentLoaded", function()){
+    document.DOMContentLoaded
+}
