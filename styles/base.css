@@ -124,6 +124,10 @@ footer {
     color: white;
     text-align: center;
     font-size: 25px;
-
 }
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
 
