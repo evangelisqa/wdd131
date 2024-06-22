@@ -1,5 +1,5 @@
 
-const currentyear = new Date().getFullYear();
+const currentyear = new Date("2024-06-22T12:00:00z").getFullYear(2024);
 
 document.querySelector("footer p:first-child span").textContent = currentYear;
 const lastModified = new Date(document.lastModified);
