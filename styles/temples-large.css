@@ -1,0 +1,12 @@
+/*Stles for larger screens (desktop, tablet,etc) */
+
+
+
+
+@media screen and (min-width: 601px){
+    body{
+        font-size: 16px;
+        margin: 20px;
+    }
+}
+    
