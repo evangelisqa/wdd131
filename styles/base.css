@@ -36,7 +36,7 @@ header h1 {
     font-size: 25px;
 }
 header{
-    background-color:#396E94;
+    background-color: darksalmon;
     color: white;
     padding: 0;
 }
@@ -64,9 +64,7 @@ nav a {
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: bisque;
-}
+
 
 .container{
     display: flex;
@@ -78,9 +76,9 @@ body{
     height: 600px;
     margin: 10px;
     border-radius: 25px;
+    box-shadow: 0 0 5px;
 }
 h2 {
-    background:#cdb4db;
     padding: 10px;
 }
 #img1 {
@@ -103,6 +101,7 @@ h2 {
 body{ 
     border: 3px solid;
     display: flow-root;
+    background-color: orange;
 }
 
 p {
@@ -120,7 +119,7 @@ a {
 
 footer {
     padding:25px;
-    background-color: #396E94;
+    background-color: darksalmon;
     color: white;
     text-align: center;
     font-size: 25px;
