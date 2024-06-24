@@ -58,6 +58,9 @@ nav a {
     margin-right: 1rem;
     text-align: center;
 }
+nav a .main-nav-item:hover {
+    color:#DDD;
+}
 
 *{
     box-sizing: border-box;
