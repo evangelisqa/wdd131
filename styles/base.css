@@ -68,7 +68,7 @@ nav a {
 }
 .container{
     display: flex;
-    justify-content:center
+    justify-content:center;
 }
 
 .card{
@@ -78,6 +78,7 @@ nav a {
     margin: 10px;
     border-radius: 25px;
     box-shadow: 0 0 5px;
+    overflow: auto;
 }
 
 h2 {
@@ -102,8 +103,9 @@ h2 {
 }
 body{ 
     border: 3px solid;
-    display: flow-root;
+    display: block;
     background-color: orange;
+    
 }
 
 p {
@@ -111,13 +113,9 @@ p {
     margin-top: 10px;
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
-.card p {
-    overflow-wrap: break-word;
-}
-div .b, .a {
-    word-wrap: break-word;
-}
+
 a {
     text-align: center;
     margin-left: 10%;
