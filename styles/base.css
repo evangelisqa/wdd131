@@ -111,6 +111,7 @@ p {
     margin-top: 10px;
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
 }
 a {
     text-align: center;
