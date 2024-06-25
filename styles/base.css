@@ -113,6 +113,9 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    word-wrap: break-word;
 }
+div .b, .a {
+    word-wrap: break-word;
+}
 a {
     text-align: center;
     margin-left: 10%;
