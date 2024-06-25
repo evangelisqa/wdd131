@@ -18,7 +18,7 @@
     /* headlines on a white background */
     --headline-color-on-color: white;
     /* headlines on a colored background */
-    --paragraph-color-on-white: #396E94;
+    --paragraph-color-on-white: black;
     /* paragraph text on a white background */
     --paragraph-color-on-color: white;
     /* paragraph text on a colored background */
@@ -26,7 +26,7 @@
     --nav-link-color: #396E94;
     --nav-background-color: #D4AC0D;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #396E94;
+    --nav-hover-background-color: darksalmon;
 }
 h1 {
     padding: 30px;
