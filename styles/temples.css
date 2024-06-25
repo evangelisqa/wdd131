@@ -8,7 +8,7 @@ nav a {
     display: block;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 100%;
     text-decoration: none;
 }
 nav {
@@ -16,7 +16,9 @@ nav {
     max-width: 800px;
     background-color: #d2afff;
 }
-
+nav a:hover {
+    border: 1px solid white;
+}
 h1 {
     text-align: center;
 }
@@ -39,17 +41,11 @@ footer {
     line-height: 1;
 }
 
-/* Media query for mobile responsive*/
-@media screen and (max-width: 600px) {
-    .site -header {
-        flex-direction: column;
-        align-items: flex-start;
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
     }
-    .main-nav{
-        margin-top: 10px;
-    }
-    .main-nav li {
-        display: block;
-        margin-bottom: 10px;
+    nav ul li {
+        /*flex: 1 1 1rem;*/
     }
 }
