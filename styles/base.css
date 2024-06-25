@@ -22,8 +22,8 @@
     --paragraph-color-on-color: white;
     /* paragraph text on a colored background */
     --paragraph-background-color: #396E94;
-    --nav-link-color: #396E94;
-    --nav-background-color: #D4AC0D;
+    --nav-link-color: white;
+    --nav-background-color: #396E94;
     --nav-hover-link-color: white;
     --nav-hover-background-color: darksalmon;
 }
@@ -41,7 +41,7 @@ header{
 }
 
 nav a:hover {
-    background-color: darksalmon;
+    background-color: rgb(221, 88, 44);
     color: white;
     text-align: center;
     word-spacing: 100px;
