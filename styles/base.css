@@ -111,8 +111,7 @@ p {
     margin-top: 10px;
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    white-space: nowrap;
-    overflow: hidden;
+
 }
 div .b, .a {
     word-wrap: break-word;
