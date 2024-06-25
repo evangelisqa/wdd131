@@ -111,7 +111,7 @@ p {
     margin-top: 10px;
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
+   word-wrap: break-word;
 }
 a {
     text-align: center;
