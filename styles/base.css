@@ -28,11 +28,7 @@
     --nav-hover-background-color: darksalmon;
 }
 h1 {
-    padding: 30px;
-    display: grid;
-    grid-template-columns:  auto;
-    padding-left: 100px ;
-    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     background-color: darksalmon;
