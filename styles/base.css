@@ -78,7 +78,7 @@ nav a {
     margin: 10px;
     border-radius: 25px;
     box-shadow: 0 0 5px;
-    overflow: auto;
+    overflow: scroll;
 }
 
 h2 {
