@@ -1,51 +1,60 @@
 
-
-
-nav ul {
-    list-style-type: none;
-}
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 100%;
+a  {
+    list-style: none;
+    margin: 0;
+    padding: 5%;
+    grid-template-rows:auto;
+    color: white;
     text-decoration: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
-nav {
-    margin: 0 auto;
-    max-width: 800px;
+
+header {
     background-color: #d2afff;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    word-spacing: 130px;
+    padding: 45px; 
+   
 }
-nav a:hover {
-    border: 1px solid white;
-}
+
 h1 {
     text-align: center;
 }
-body{
-    font-family: Arial, sans-serif;
-    background-color: white;
-}
-img {
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
-footer {
-    padding:2px;
-    background-color: #d2afff;
-    color: black;
+footer{
     text-align: center;
-    font-size: 25px;
-    line-height: 1;
+    background-color: #d2afff;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
 }
 
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
+/* Media query for mobile responsive*/
+@media screen and (max-width: 600px) {
+    .site -header {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    nav ul li {
-        /*flex: 1 1 1rem;*/
+    .main-nav{
+        margin-top: 10px;
+    }
+    .main-nav li {
+        display: flex;
+        margin-bottom: 10px;
     }
 }
+
+@media screen and (min-width: 601px){
+    body{
+        font-size: 16px;
+        margin: 20px;
+    }
+}
+   
