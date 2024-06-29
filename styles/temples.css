@@ -10,7 +10,7 @@ nav a:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 nav {
-    text-decoration: none;
+   
     height: 80px;
     width: 100%;
 }
@@ -26,6 +26,14 @@ nav ul {
 }
 nav a {
     transition: color 0.3s;
+    text-decoration: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 p {
     text-align: center;
