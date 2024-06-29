@@ -22,7 +22,7 @@ na ul li a {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+   
 }
 ul {
     list-style: none;
@@ -36,13 +36,10 @@ nav ul {
     padding: 1rem;
 }
 
-a.home,a:hover {
-    background: purple;
-    
-}
+
 
 nav a {
-    transition: color 0.3s;
+    
     text-decoration: none;
     font-size: 30px;
 }
@@ -69,6 +66,7 @@ figure {
 }
 h1, h2 {
     text-align: center;
+    color: blueviolet;
 }
 .center {
     display: block;
