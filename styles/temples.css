@@ -19,6 +19,10 @@ header {
     padding: 45px; 
    
 }
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
 figure {
     text-align: center;
 }
