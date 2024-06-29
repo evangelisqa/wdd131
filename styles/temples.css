@@ -14,15 +14,26 @@ nav {
     height: 80px;
     width: 100%;
 }
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+na ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.home,a:hover {
+    background: purple;
+    transition: 2s;
 }
 nav a {
     transition: color 0.3s;
