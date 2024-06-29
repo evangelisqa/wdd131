@@ -104,14 +104,3 @@ footer{
         margin: 20px;
     }
 }
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgb(233, 178, 233);
-    }
-}
