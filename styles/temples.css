@@ -1,4 +1,6 @@
-
+body{
+    background: blue;
+}
 nav a:hover {
     
     list-style: none;
