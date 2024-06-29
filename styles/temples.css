@@ -19,6 +19,9 @@ nav ul {
     justify-content: space-around;
     padding: 1rem;
 }
+nav a {
+    transition: color 0.3s;
+}
 header {
     background-color: #d2afff;
     color: white;
