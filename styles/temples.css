@@ -16,10 +16,12 @@ nav {
     height: 40px;
     width: 100%;
 }
+header .h1{
+    float: left;
+}
 
 
-
-na ul li a {
+nav ul li a {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
