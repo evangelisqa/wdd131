@@ -1,5 +1,85 @@
 /*Stles for larger screens (desktop, tablet,etc) */
+body {
+    background-color: #8c92ac;
+}
+nav a:hover {
+    
+    list-style: none;
+    margin: 0;
+    padding: 5%;
+    grid-template-rows:auto;
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav {
+   
+    height: 40px;
+    width: 100%;
+}
 
+
+
+na ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+   
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+nav a {
+    
+    text-decoration: none;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+header {
+    background-color: #736b92;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 130px;
+    padding: 45px; 
+}
+.responsive-image {
+    width: 70%;
+    height: auto;
+}
+
+figure {
+    text-align: center;
+}
+h1, h2 {
+    text-align: center;
+    color: white;
+}
+.center {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    text-align: center;
+    background-color: #736b92;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
 
 
 

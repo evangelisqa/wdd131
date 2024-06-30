@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+.grid-container{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(50px, 3fr));
+}
+
+
+@media(min-width: 768px){
+    .grid-container{
+       grid-template-columns: repeat(3, 1fr);
+    }
+}
