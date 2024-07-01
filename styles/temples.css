@@ -62,7 +62,7 @@ footer {
     text-align: center;
     font-size: 25px;
     padding: 30px;
-    margin: auto;
+    margin: 0;
 }
 @media(min-width:768px){
     .grid-container{
