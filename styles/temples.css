@@ -9,7 +9,7 @@ header{
     background-color:#736b92;
     width: auto;
    text-align: center;
-   
+   overflow: scroll;
 }
 
 #sidebar-menu{
