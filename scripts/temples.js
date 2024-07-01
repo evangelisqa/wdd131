@@ -1,9 +1,11 @@
+
 const hamburgerButton = document.getElementById("hamburger-menu");
 const sidebarMenu =document.getElementById("sidebarMenu");
 
 hamburgerButton.addEventListener("click", () =>{
     sidebarMenu.classList.toggle("show-menu");
 })
+
 
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
