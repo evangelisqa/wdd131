@@ -15,26 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
 <body>
-    <header> 
-        <nav>
-          <label class="logo">Temple Album</label>
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Old">Old</a></li>
-            <li><a href="#New">New</a></li>
-            <li><a href="#Large">Large</a></li>
-            <li><a href="#Small">Small</a> </li>
-        </ul>
+    <header>  
+        <div class="header-title"> Temple Album</div>
+        <nav class="flex-contaner">
+            <div class="topnav">
+           
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="Old">Old</a></li>
+                <li><a href="New">New</a></li>
+                <li><a href="Small">Small</a></li>
+                <li><a href="Large">Large</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a></li>
+                <i class="fa fa-bars"></i>
+            </ul>
+            </div>
         </nav>
+
     </header>
     <main>
-        <h1>Home</h1>
-        <p>My favorite place to be in the temple</p>
         <figure>
             <img src="images/vancouver.jpeg" alt="Temple1" class="responsive-image">
             <figcaption>Vancouver Temple</figcaption>
         </figure>
-        <h2>Holy Place</h2>
         <figure>
             <img src="images/vancouver.jpeg" alt="Temple2" class="responsive-image">
             <figcaption>Vancouver Temple</figcaption>
