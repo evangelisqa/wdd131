@@ -78,7 +78,7 @@ footer {
     }
 }
 @media screen and (max-width: 768){
-    .topnav{
+    topnav{
         display: none;
     }
 }
