@@ -32,6 +32,9 @@ header{
 }
 h1{
     text-align: center;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
  }
 main{
     display: grid;
