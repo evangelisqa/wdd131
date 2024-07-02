@@ -1,5 +1,55 @@
-
-.hero-image{
+:root{
+    --background-color: white;
+    --font-family:  Verdana;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+h1{
+    font-size: 40px;
+}
+h1, h2{
+    font-family: var(--font-family);
+}
+.hero-img{
     max-width: 100%;
     height: auto;
+}
+header{
+    background-color: #008000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+main{
+    background-color: var(--background-color);
+    padding-top: 20px;
+}
+.data{
+    background-color:white ;
+    padding: 20px;
+    position: absolute;
+    top: 215px;
+    left: 15px;
+    z-index: 1;
+    text-align: center;
+}
+.data h2{
+    font-size: 30px;
+    color: black;
+    margin-left: -31px;
+    padding: 25px;
+    background-color: blue;
+    margin-right: 55px;
+}
+.weather{
+    background-color: blue;
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    top: 900px;
+    z-index: 1;
 }

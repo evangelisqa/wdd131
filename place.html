@@ -6,33 +6,49 @@
     <title>"Buchart Garden"</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <div class="container"></div>
+   <header>
     <h1>Buchart Garden</h1>
-    <div class="image-placeholder">
-        <img class="hero-image"
-        src="images/small.jpeg"
-       srcset ="images/small-x2.jpeg 2x,images/large-3x.jpeg 3x" alt="Hero Image">
-    </div>
-    <h1>Weather</h1>
-   <div id="weather-info">
-    <p><strong>Temperature:</strong>60°F</p>
-    <p><strong>Condition:</strong>Mostly Clear</p>
-    <p><strong>Wind Speed:</strong>10mph</p>
-    <p><strong>Wind Chill</strong>-5°F</p>
-   </div>
-   <h1>Data</h1>
-   <div id="other-info">
-    <p><strong>Area:</strong></p>
-    <p><strong>Population:</strong></p>
-    <p><strong>Capital:</strong></p>
-    <p><strong>Language:</strong></p>
-    <p><strong>Currency:</strong></p>
-    <p><strong>Time Zone:</strong></p>
-    <p><strong>Calling Code:</strong></p>
-    <p><strong>Internet TLD:</strong></p>
-   </div>
+   </header>
+   <main>
+    <section class="hero">
+        <picture>
+            <!-- WebP image for the smaller hero image-->
+             <source srcset="images/smaller.webp" media="(max-width: 700px)">
+             <!-- Backup for browsers that do not support the picture Element-->
+              <img src="images/tulip.webp" alt="Hero Image">
+        </picture>
+    </section>
+
+    <section class="Data">
+        <h2>Data</h2>
+        <p>Area: 944,735 square kilometers</p>
+        <p>Population: 5.6 million</p>
+        <p>Capital: Victoria</p>
+        <p>Language: English</p>
+        <p>Currency: Canadian Dollar(CAD)</p>
+        <p>Time Zone: Pacific Time Zone(UTC-08:00)</p>
+        <p>Calling Code: +1</p>
+        <p>Internet TLD: .ca</p>
+    </section>
+    <section class="Weather">
+        <div class="weather-info">
+            <h2>Weather</h2>
+            <!--Emojis for the weather icon in the wide view-->
+            <span class="weather-icon-wide">*</span>
+            <img class="weather-icon-mobile" src="images/sunny_icon.jpeg" alt="Weather Icon">
+        </div>
+        <p id="temperature"Temperature: 30°C></p>
+        <p id="condition">Condition: Sunny</p>
+        <p id="wind">Wind: 9 km/h</p>
+        <p id="wind-chill">Wind Chill: <span id="wind-chill-value"></span></p>
+    </section>
+   </main>
     <footer>
         <p>  &copy; <span id="currentyear"></span>  
             <span>&#128049;</span>  
