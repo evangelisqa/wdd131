@@ -65,12 +65,21 @@ main{
     margin-top: -9px;
     margin-right: 10px;
 }
-.weather img{
+.img{
     display: none;
 }
-section p{
+.weather-icon-mobile{
+    border-radius: 800px;
+    width: 5%;
+    height: auto;
+}
+.weather{
+    place-items: center;
+}
+section{
     text-align: center;
 }
+
 footer{
     background-color: #008000;
    color: white;
@@ -78,9 +87,7 @@ footer{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    padding: 10px 0;
 }
-footer::after{
-    content: "Portfolio Page";
-}
+
 /* Media query for lesser screens */
 @media screen and (max-width: 600px) {
     .hero picture{
