@@ -35,15 +35,14 @@ main{
     top: 215px;
     left: 15px;
     z-index: 1;
-    text-align: center;
 }
 .data h2{
     font-size: 30px;
-    color: black;
     margin-left: -31px;
+    margin-right: 55px;
     padding: 25px;
     background-color: blue;
-    margin-right: 55px;
+    color: black;
 }
 .weather{
     background-color: blue;
@@ -52,4 +51,23 @@ main{
     right: 20px;
     top: 900px;
     z-index: 1;
+}
+.weather info{
+    margin-left: -30px;
+    margin-right: 60px;
+    display: flex;
+    padding: 15px;
+    background-color: blueviolet;
+}
+.weather h2{
+    color: black;
+    font-size: 30px;
+    margin-top: -9px;
+    margin-right: 10px;
+}
+.weather img{
+    display: none;
+}
+section p{
+    text-align: center;
 }
