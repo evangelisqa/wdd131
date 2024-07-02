@@ -1,3 +1,16 @@
+const weatherData = {
+    temperature: "60°F",
+    condition: "Mostly Clear",
+    windSpeed: "10 mph",
+    windhill: "-5°F"
+};
+
+document.getElementById("temperature").textContent = weatherData.temperature;
+document.getElementById("Condition").textContent = weatherData.condition;
+document.getElementById("winsSpeed").textContent = weatherData.windSpeed;
+document.getElementById("windChill").textContent = weatherData.windchill;
+
+
 
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
