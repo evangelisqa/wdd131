@@ -87,7 +87,7 @@ footer{
    padding: 10px 0;
 }
 footer::after{
-    content:"Portfolis Page"
+    content:"Portfolio Page"
 }
 
 /* Media query for lesser screens */
