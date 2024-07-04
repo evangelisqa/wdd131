@@ -33,6 +33,7 @@ h1 {
 nav {
     display: flex;
     flex-direction: column;
+   
 }
 nav a {
     display: none;
@@ -48,6 +49,8 @@ nav a {
     text-align: center;
     z-index: 2;
 }
+
+
 h2 {
     box-shadow: 1px 1px 5px var(--bottom-color);
     border-bottom: 5px solid var(--bottom-color);
@@ -136,7 +139,7 @@ a:hover {
     font-size: 40px;
 }
 footer {
-    background-color: var(--bottom-color);
+    background-color: var(--top-color);
     color: white;
     font-family: var(--font-page);
     font-size: 1.2em;
