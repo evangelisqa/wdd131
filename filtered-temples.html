@@ -17,28 +17,34 @@
     </head>
     <body>
     <header>  
-        <nav>
-            <button id="hamburger-menu"></button>
-                <div class="header-title"> 
-                    <h1>Filtered Temple Album</h1>   
-                  <div class="topnav" id="myTopnav">
+        <h1>Filtered Temple Album</h1>  
+        <a href="#" id="hammenu"></a>     
+        <nav id="navmenu">
             <ul>
-                <li><a href="home-button">Home</a></li>
-                <li><a href="old-button">Old</a></li>
-                <li><a href="new-button">New</a></li>
-                <li><a href="small-button">Small</a></li>
-                <li><a href="large-button">Large</a></li>
-                <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
-            </ul>
+                <li><a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a></li>
+                <li><a href="old-button" href="#">Old</a></li>
+                    <li><a href="new-button" href="#">New</a></li>
+                        <li><a href="small-button" href="#">Small</a></li>
+                            <li><a href="large-button" href="#">Large</a></li>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                                <button class="hamburger">
+                                    <i class="menuIcon">menu</i>
+                                    <i class="closeIcon">close</i>
+                                </button>
+                 
             </div>
         </div> 
-        </nav>
+        </ul>
+     </nav>
         
     <div class="overlay"></div>
     </header>
         <h2>Home</h2>
         <main>
-
+            <h2>to be posted</h2>
+            <div class="temple-grid"></div>
+            <!--For temples images-->
+            <section id="temples"></section>
         </main>
         <footer>
             <p>  &copy; <span id="currentyear"></span>  
@@ -46,7 +52,7 @@
                 Evangelis Albesa, Canada
                 <span>&#128049;</span>
             </p>
-            <div id="lastModified"></div>  
+            <p id="lastModified"></p>  
         </footer>
     </body>
     </html>

@@ -1,6 +1,23 @@
 
+const menu - document.querySelector('menu');
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector('.closeIcon');
+const menuIcon = document.querySelector('.menuIcon');
 
+function toggleMenu(){
+  if
+  (menu.classList. contains("showMenu")){
+   menu.clasList.remove("showMenu");
+   closeIcon.computedStyleMap.display = "none";
+   menuIcon.computedStyleMap.display = "block";
+  }else{
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none"
+  }
+}
 
+hamburger.addEventListener("click", toggleMenu)
 
 const temples = [
     {
@@ -60,4 +77,34 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
-  ];
+    {templeName: "Vancouver British Columbia",
+    location: "Vancouver, Britisch Columbia, Canada",
+    dedicated: "2010, May, 2",
+    area: 28165,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    }
+    {
+    templeName: "Manila Philippines",
+    location: "Manila, Philippines",
+    dedicated: "1984, September, 25",
+    area: 26683,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    }
+    {
+    templeName: "Taipei Taiwan",
+    location: "Taipei, Taiwan",
+    dedicated: "1984, Novenber, 17",
+    area: 9945,
+    imageUrl: 
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    }
+];
+// Crrent year in the footer's first paragraph
+const currentYear = new Date().getFullYear();
+document.getElementById("currentyear").textContent = currentYear;
+
+// The date the document was last nodified in the footer's second paragraph
+const lastModifiedDate = new Date(document.lastModified);
+document.getElementById("lastModified").textContent = "Last Modification": + lastModified;
