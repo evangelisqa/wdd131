@@ -1,27 +1,177 @@
-.hamburger{
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
+:root{
+    --font-page: sans-serif, Geneva, Verdana;
+    --font-heading: Georgia, Times, serif;
+
+/* colors */
+--top-color: #FF3300;
+--top-color: #FF6600;
+--text-light: white;
+--bottom-color: #FF3333;
+--bottom-color-light: #FF6633;
+--bottom-color-medium: #FF9933;
 }
-.closeIcon{
+body{
+    display: grid;
+    grid-template-rows: 100px auto auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 1rem;
+    background-color: var(--top-color);
+}
+h1 {
+    color: var(--text-light);
+    padding-left: 1.5rem;
+    padding: 1rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+nav a {
     display: none;
+    padding: 0.5rem 0 0.5rem 0;
+    width: 45%;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: var(--top-color);
+    color: var(--text-light);
+    font-family: var(--font-page);
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 2;
 }
-.menu{
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
+h2 {
+    box-shadow: 1px 1px 5px var(--bottom-color);
+    border-bottom: 5px solid var(--bottom-color);
+    color:var(--text-light);
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+#temples{
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px var(--top-color);
+    width: 100%
+}
+.temple-card{
+    box-shadow: 3px 3px 20px var(--bottom-color);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 1rem;
+    padding: 1rem;
+}
+.temple-card table {
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+.temple-img {
+    aspect-ratio: auto 400/250;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px var(--top-color);
+    width: 100%;
+}
+.value, label {
+    font-family: var(--font-page);
+    font-size: 1em;
+}
+.value {
+    text-align: left;
+    padding-left: 0.5;
+    font-weight: 400;
+}
+.label {
+    text-align: right;
+    padding-left: 0.5rem;
+    font-weight: 600;
+}
+h3 {
+    color: var(--top-color);
+    font-family: var(--font-heading);
+    font-size: 1.3em;
+    text-align: center;
+}
+.open a {
+    display: block;
+}
+a:hover {
+    background-color: var(--top-color-light);
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+}
+.active::after {
+    content: "⛪";
+    padding-left: 1rem;
+}
+.active {
+    font-weight: 700;
+}
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
     color: white;
-    list-style: none;
-    padding-top: 4rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+#menu.open::before {
+    content: x;
+}
+#menu::before {
+    content:"☰";
+    font-size: 40px;
+}
+footer {
+    background-color: var(--bottom-color);
+    color: white;
+    font-family: var(--font-page);
+    font-size: 1.2em;
+    padding: 1rem 1rem 6rem 1rem;
+    text-align: center;
+}
+@media ( min-width: 770px) {
+    #temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin: 0;
+    }
+    #menu{
+        display: none;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1.3fr 2fr;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    nav {
+        flex-direction: row;
+        background-color: transparent;
+        max-height: 80px;
+    }
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1.5rem;
+    }
+    .active::before {
+        padding-right: 0.5rem;
+    }
 }

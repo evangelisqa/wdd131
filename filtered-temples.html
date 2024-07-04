@@ -18,19 +18,13 @@
     <body>
     <header>  
         <h1>Filtered Temple Album</h1>  
-        
-        <nav id="menu">
-            <ul>
-                <li><a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a></li>
-                <li><a href="old-button" href="#">Old</a></li>
-                <li><a href="new-button" href="#">New</a></li>
-                <li><a href="small-button" href="#">Small</a></li>
-                <li><a href="large-button" href="#">Large</a></li>
-                
-                    <button class="hamburger">
-                        <i class="menuIcon">menu</i>
-                        <i class="closeIcon">close</i>
-                    </button>
+         <button id="menu" aria-label="=menu"></button>
+        <nav>
+              <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
+              <a href="old-button" href="#">Old</a>
+              <a href="new-button" href="#">New</a>
+              <a href="small-button" href="#">Small</a>
+              <a href="large-button" href="#">Large</a>
                  
             </div>
         </div> 
@@ -42,7 +36,6 @@
         <h2>Home</h2>
         <main>
             <h2>to be posted</h2>
-            <div class="temple-grid"></div>
             <!--For temples images-->
             <section id="temples"></section>
         </main>
