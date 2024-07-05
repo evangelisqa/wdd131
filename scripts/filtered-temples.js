@@ -79,7 +79,7 @@ const temples = [
     area: 28165,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    }
+    },
     {
     templeName: "Manila Philippines",
     location: "Manila, Philippines",
@@ -87,7 +87,7 @@ const temples = [
     area: 26683,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    }
+    },
     {
     templeName: "Taipei Taiwan",
     location: "Taipei, Taiwan",
