@@ -67,6 +67,9 @@ na ul li{
 nav ul li a{
     font-size: 15px;
 }
+.img{
+    
+}
 @media (max-width: 858px){
     .checkbtn{
         display: block;
