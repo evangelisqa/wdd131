@@ -9,7 +9,6 @@ const smallButton = document.querySelector('#small-button');
 
 const pageHeading = document.querySelector('#page-heading');
 
-
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
@@ -78,7 +77,7 @@ const temples = [
     dedicated: "2010, May, 2",
     area: 28165,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://www.victoriabuzz.com/wp-content/uploads/2024/04/mormon.png"
     },
     {
     templeName: "Manila Philippines",
@@ -86,7 +85,7 @@ const temples = [
     dedicated: "1984, September, 25",
     area: 26683,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://newsroom.churchofjesuschrist.org/media/960x540/manilaphilippines_large.jpg"
     },
     {
     templeName: "Taipei Taiwan",
@@ -94,7 +93,7 @@ const temples = [
     dedicated: "1984, Novenber, 17",
     area: 9945,
     imageUrl: 
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/taipei-taiwan-temple/taipei-taiwan-temple-8302.jpg"
     }
 ];
 
