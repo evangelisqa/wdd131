@@ -1,14 +1,20 @@
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('nav');
+// select menu buttons
+const homeButton = document.querySelector('#home-button');
+const oldButton = document.querySelector('#old-button');
+const newButton = document.querySelector('#new-button');
+const largeButton = document.querySelector('#large-button');
+const smallButton = document.querySelector('#small-button');
 
-const hambutton = document.querySelector('hambutton');
-document.addEventListener('DOMContentLoaded', function () {
-  const hamButton = document.querySelector('#menu');
-  const navigation = document.querySelector('.navigation');
+const pageHeading = document.querySelector('#page-heading');
 
-  hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('show');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
-  });
 });
+
 
 const temples = [
     {
@@ -92,41 +98,135 @@ const temples = [
     }
 ];
 
-createTemplateCard(temples);
+let filteredTemples = [];
 
-function createTempleCard(Temples){
-  document.querySelector(".res-grid").innerHTML - "";
-  Temples.forEach(temple => {
-    let card = document.createElement("section")
-    let name = document.createElement("h3");
-    let location = document.createElement("p");
-    let dedication = document.createElement("p");
-    let area = document.createElement("p");
-    let img = document.createElement("img");
+document.addEventListener('DOMContentLoaded', function () {
+    generate_temple_cards("home");
+}, false);
 
-    name.textContent = temple.templeName;
-    location.innerHTML = `<span class="label" >Location:</span> ${temple.location}`;
-    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-    area.innerHTML = `<span calss="label">Size:</span> ${temple.area} sq + 1`;
-    img.setAttribute("src", temple.imageUrl);
-    img.setAttribute("alt", `{temple.templeName} Temple`);
-    img.setAttribute("loading", "lazy");
+function changeActive(activePhrase) {
+    // change active class on nav buttons
+    homeButton.classList.remove('active');
+    oldButton.classList.remove('active');
+    newButton.classList.remove('active');
+    largeButton.classList.remove('active');
+    smallButton.classList.remove('active');
 
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedication);
-    card.appendChild(area);
-    card.appendChild(img);
-
-    document.querySelector(res-grid).appendChild(card);
-  })
+    switch (activePhrase) {
+        case "home":
+            homeButton.classList.add('active');
+            break;
+        case "old":
+            oldButton.classList.add('active');
+            break;
+        case "new":
+            newButton.classList.add('active');
+            break;
+        case "large":
+            largeButton.classList.add('active');
+            break;
+        case "small":
+            smallButton.classList.add('active');
+            break;
+        default:
+    }
 }
 
+// reorder date format
+function reorderDate(dateString) {
+    const parts = dateString.split(',').map(part => part.trim()); // ['1965', 'April', '4']
 
-// Crrent year in the footer's first paragraph
+    const day = parts[2];
+    const month = parts[1];
+    const year = parts[0];
+
+    return `${day} ${month} ${year}`;
+}
+
+function generate_temple_cards(filterPhrase) {
+    /* Filter temple array: Home - displays all | Old - temples built before 1900 | New - temples built after 2000 | 
+    Large - temples larger than 90000 square feet | Small - temples smaller than 10000 square feet */
+    switch (filterPhrase) {
+        case "home":
+            filteredTemples = temples;
+            pageHeading.textContent = "Temples | Home";
+            break;
+        case "old":
+            filteredTemples = temples.filter((temple) => parseInt(temple.dedicated.split(",", 1)) < 1900);
+            pageHeading.textContent = "Old Temples | Built Before 1900";
+            break;
+        case "new":
+            filteredTemples = temples.filter((temple) => parseInt(temple.dedicated.split(",", 1)) > 2000);
+            pageHeading.textContent = "New Temples | Built After 2000";
+            break;
+        case "large":
+            filteredTemples = temples.filter((temple) => temple.area > 90000);
+            pageHeading.textContent = "Large Temples | Greater than 90000 sq ft";
+            break;
+        case "small":
+            filteredTemples = temples.filter((temple) => temple.area < 10000);
+            pageHeading.textContent = "Small Temples | Less than 10000 sq ft";
+            break;
+        default:
+            filteredTemples = temples;
+            pageHeading.textContent = "Temples | Home";
+    };
+    changeActive(filterPhrase);
+    const htmlTemples = filteredTemples.map(
+        (temple) =>
+            `<div class="temple-card">
+                <div class="temple-info">
+                    <h3>${temple.templeName}</h3>
+                    <table>
+                        <tr>
+                            <th class="label">Location:</th>
+                            <td class="value">${temple.location}</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Dedicated:</th>
+                            <td class="value">${reorderDate(temple.dedicated)}</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Size:</th>
+                            <td class="value">${temple.area} sq ft</td>
+                        </tr>
+                    </table>
+                </div>
+                <img class="temple-img" data-src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400">
+            </div>`
+    );
+    document.getElementById("temples").innerHTML = htmlTemples.join('');
+    // remove the data-src attribute when the image has loaded
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function () {
+            img.removeAttribute('data-src');
+        };
+    });
+}
+
+// create event listeners for menu selections
+homeButton.addEventListener('click', () => {
+    generate_temple_cards("home");
+});
+oldButton.addEventListener('click', () => {
+    generate_temple_cards("old");
+});
+newButton.addEventListener('click', () => {
+    generate_temple_cards("new");
+});
+largeButton.addEventListener('click', () => {
+    generate_temple_cards("large");
+});
+smallButton.addEventListener('click', () => {
+    generate_temple_cards("small");
+});
+
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
-// The date the document was last nodified in the footer's second paragraph
 const lastModifiedDate = new Date(document.lastModified);
-document.getElementById("lastModified").textContent = "Last Modification": + lastModified;
+const options = {year: 'numeric', month: 'long', day:'numeric'};
+
+document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate.toLocaleDateString (undefined, options)}`;
+document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate.toLocaleTimeString (undefined, options)}`;
