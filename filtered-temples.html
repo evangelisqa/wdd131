@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
     <script src="scripts/filtered-temples.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <img src="ttps://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg" alt="Temple Images">
     </head>
     <body>
     <header>  
-        <h1>Filtered Temple Album</h1>  
-         <button id="menu" aria-label="=menu"></button>
-        <nav>
+       <h1 class="handler">Filtered Temple Album</h1>
+       <a href="#" id="hambutton"></a>
+        <nav id="navmenu">
            
              <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
              <a href="old-button" href="#">Old</a>
@@ -36,7 +36,8 @@
         <main>
             <h2>to be posted</h2>
             <!--For temples images-->
-            <section id="temples"></section>
+            <input type="text" id="imageUrl" placeholder=""https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"">
+            <div class="res-grid"><div>
         </main>
         <footer>
             <p>  &copy; <span id="currentyear"></span>  
@@ -48,3 +49,4 @@
         </footer>
     </body>
     </html>
+    

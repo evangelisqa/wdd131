@@ -1,23 +1,14 @@
 
-const menu = document.querySelector('menu');
-const hamburger = document.querySelector(".hamburger");
-const closeIcon = document.querySelector('.closeIcon');
-const menuIcon = document.querySelector('.menuIcon');
+const hambutton = document.querySelector('hambutton');
+document.addEventListener('DOMContentLoaded', function () {
+  const hamButton = document.querySelector('#menu');
+  const navigation = document.querySelector('.navigation');
 
-function toggleMenu(){
-  if
-  (menu.classList. contains("showMenu")){
-   menu.clasList.remove("showMenu");
-   closeIcon.computedStyleMap.display = "none";
-   menuIcon.computedStyleMap.display = "block";
-  }else{
-    menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none"
-  }
-}
-
-hamburger.addEventListener("click", toggleMenu)
+  hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('show');
+    hamButton.classList.toggle('open');
+  });
+});
 
 const temples = [
     {
@@ -73,8 +64,7 @@ const temples = [
       location: "Mexico City, Mexico",
       dedicated: "1983, December, 2",
       area: 116642,
-      imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
     {templeName: "Vancouver British Columbia",
@@ -101,6 +91,38 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     }
 ];
+
+createTemplateCard(temples);
+
+function createTempleCard(Temples){
+  document.querySelector(".res-grid").innerHTML - "";
+  Temples.forEach(temple => {
+    let card = document.createElement("section")
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class="label" >Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span calss="label">Size:</span> ${temple.area} sq + 1`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `{temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(res-grid).appendChild(card);
+  })
+}
+
+
 // Crrent year in the footer's first paragraph
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
