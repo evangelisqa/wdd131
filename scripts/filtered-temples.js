@@ -1,5 +1,5 @@
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('#nav');
+const navigation = document.querySelector('nav');
 // select menu buttons
 const homeButton = document.querySelector('#home-button');
 const oldButton = document.querySelector('#old-button');
@@ -9,7 +9,7 @@ const smallButton = document.querySelector('#small-button');
 
 const pageHeading = document.querySelector('#page-heading');
 
-hamButton.addEventListener('click', () => {
+hamButton.addEventListener('click',()=> {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
