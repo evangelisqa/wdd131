@@ -167,17 +167,19 @@ a:hover {
 footer {
     background-color: var(--top-color);
     color: white;
-    padding: 1rem 1rem 6rem 1rem;
+    padding: 20px;
     text-align: center;
     font-size: 1.2em;
     font-family: var(--font-page);
-    margin-top: 3%;
-    height: auto;
+  
 }
-p {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
+
+
+
+  
+
+
 
 @media (min-width: 768px) {
 
