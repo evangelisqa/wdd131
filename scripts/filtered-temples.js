@@ -15,7 +15,7 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-
+/* The temples I have been visiting */
 const temples = [
     {
         templeName: "Taipei Taiwan Temple",
@@ -131,6 +131,16 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seattle-washington/400x250/seatlle-temple-lds-933559-wallpaper.jpg"
     },
     {
+        templeName: "Vancouver Canada Temple",
+        location: "Vancover, British Columbia ",
+        dedicated: "2010, May, 2",
+        area: 28165,
+        imageUrl:
+             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vancouver-british-columbia/400x250/vancouver-temple-766984-wallpaper.jpg"
+    },
+    /* I've been planning to visit these temples someday */
+
+    {
         templeName: "Manti Utah",
         location: "Manti, Utah, United States",
         dedicated: "1888, May, 21",
@@ -145,14 +155,6 @@ const temples = [
         area: 96630,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-daylight-1416668-wallpaper.jpg"
-    },
-    {
-        templeName: "Yigo Guam",
-        location: "Yigo, Guam",
-        dedicated: "2020, May, 2",
-        area: 6861,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
     },
     {
         templeName: "Washington D.C.",
@@ -179,15 +181,6 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-utah-temple-clouds-922212-wallpaper.jpg"
     },
    
-    {
-        templeName: "Vancouver Canada Temple",
-        location: "Vancover, British Columbia ",
-        dedicated: "2010, May, 2",
-        area: 28165,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vancouver-british-columbia/400x250/vancouver-temple-766984-wallpaper.jpg"
-    },
-    
 ];
 
 let filteredTemples = [];
