@@ -122,7 +122,7 @@ a:hover {
 .active {
     font-weight: 700;
 }
-#menu {
+#hambutton {
     font-size: 1.5rem;
     background: none;
     border: 0;
@@ -131,10 +131,10 @@ a:hover {
     top: 10px;
     right: 15px;
 }
-#menu.open::before {
+#hambutton.open::before {
     content: x;
 }
-#menu::before {
+#hambutton::before {
     content:"☰";
     font-size: 40px;
 }
@@ -152,7 +152,7 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         margin: 0;
     }
-    #menu{
+    #hambutton{
         display: none;
     }
     header {
