@@ -172,7 +172,7 @@ footer {
     font-size: 1.2em;
     font-family: var(--font-page);
     margin-top: 3%;
-    height: 50%;
+    height: auto;
 }
 p {
     margin-top: 30px;
