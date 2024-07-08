@@ -1,6 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
-// select menu buttons
+// Select menu buttons
 const homeButton = document.querySelector('#home-button');
 const oldButton = document.querySelector('#old-button');
 const newButton = document.querySelector('#new-button');
