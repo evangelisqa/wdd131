@@ -138,8 +138,8 @@ const temples = [
         imageUrl:
              "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vancouver-british-columbia/400x250/vancouver-temple-766984-wallpaper.jpg"
     },
-    /* I've been planning to visit these temples someday */
 
+    /* I've been planning to visit these temples someday */
     {
         templeName: "Manti Utah",
         location: "Manti, Utah, United States",
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 function changeActive(activePhrase) {
-    // change active class on nav buttons
+// change active class on nav buttons
     homeButton.classList.remove('active');
     oldButton.classList.remove('active');
     newButton.classList.remove('active');
@@ -229,8 +229,8 @@ function reorderDate(dateString) {
 }
 
 function generate_temple_cards(filterPhrase) {
-    /* Filter temple array: Home - displays all | Old - temples built before 1900 | New - temples built after 2000 | 
-    Large - temples larger than 90000 square feet | Small - temples smaller than 10000 square feet */
+/* Filter temple array: Home - displays all | Old - temples built before 1900 | New - temples built after 2000 | 
+Large - temples larger than 90000 square feet | Small - temples smaller than 10000 square feet */
     switch (filterPhrase) {
         case "home":
             filteredTemples = temples;
@@ -281,7 +281,7 @@ function generate_temple_cards(filterPhrase) {
             </div>`
     );
     document.getElementById("temples").innerHTML = htmlTemples.join('');
-    // remove the data-src attribute when the image has loaded
+    // remove the data-src attribute once the image has loaded
     [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
         img.setAttribute('src', img.getAttribute('data-src'));
         img.onload = function () {
@@ -290,7 +290,7 @@ function generate_temple_cards(filterPhrase) {
     });
 }
 
-// create event listeners for menu selections
+// create an event listeners for menu selections
 homeButton.addEventListener('click', () => {
     generate_temple_cards("home");
 });
@@ -307,11 +307,10 @@ smallButton.addEventListener('click', () => {
     generate_temple_cards("small");
 });
 
-
-// Output the current year in the footer's first paragraph
+// Display the current year in the first paragraph of the footer.
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
-// Output the date the document was last modified in the footer's second paragraph
+// Display the date the document was last modified in the second paragraph of the footer.
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = "Last Modification: " + lastModified;
