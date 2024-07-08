@@ -133,17 +133,10 @@ a:hover {
     font-weight: 700;
 }
 
-
 .active::before {
     content: "⛪";
     padding-right: 1rem;
 }
-
-/*
-.active::after {
-    content: "⛪";
-    padding-left: 1rem;
-} */
 
 #menu {
     font-size: 1.5rem;
@@ -159,7 +152,6 @@ a:hover {
     font-size: 40px;
 }
 
-
 #menu.open::before {
     content: "x";
 }
@@ -173,13 +165,6 @@ footer {
     font-family: var(--font-page);
   
 }
-
-
-
-
-  
-
-
 
 @media (min-width: 768px) {
 
