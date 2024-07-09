@@ -33,13 +33,15 @@
             <label><input aria-label="input" type="date" name="installation" required></label>
             <div class="title">Which features did you find useful in this product?</div>
             <div>(<i>Check all that apply</i>)</div>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="durability" name="Durability" value="yes"> Durability<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="ease-use" name="Ease of Use" value="yes"> Ease of Use<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="performance" name="Performance" value="yes"> Performance<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="design" name="Design" value="yes"> Design<br></label>
+            <label class="checkbox-label" for="durability"><input aria-label="input" type="checkbox" id="durability" name="Durability" value="yes"> Durability<br></label>
+            <label class="checkbox-label" for="durability"><input aria-label="input" type="checkbox" id="ease-use" name="Ease of Use" value="yes"> Ease of Use<br></label>
+            <label class="checkbox-label" for="durability"><input aria-label="input" type="checkbox" id="performance" name="Performance" value="yes"> Performance<br></label>
+            <label class="checkbox-label" for="durability"><input aria-label="input" type="checkbox" id="design" name="Design" value="yes"> Design<br></label>
             <div class="title">Written Review (<i>optional</i>)</div>
+            <label for="review-box">Written Review(optional):</label>
             <textarea aria-label="text area" id="review-box" name="Written Review"></textarea>
             <div class="title">Your Name (<i>optional</i>)</div>
+            <label for="name-input">Your Name (optional):</label>
             <input aria-label="input" type="text" id="name-input" name="your name">
             <input aria-label="input" type="submit" id="submit-button" value="Leave Your Review">
         </form>
