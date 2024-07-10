@@ -1,4 +1,4 @@
-// product array
+// Product array
 const products = [
     {
       id: "fc-1888",
