@@ -3,5 +3,7 @@ body{
 }
 header{
     display: flex;
-    
+    display: flex;
+    align-items: center;
+    background-color: #70e000;
 }
