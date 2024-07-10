@@ -1,60 +1,41 @@
-/*Stles for larger screens (desktop, tablet,etc) */
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-body{
-    font-family: Verdana,Tahoma, sans-serif;
-}
-nav{
-    
-    height: 80px;
-    width: 100%;
-}
-.temple-album{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-a.active,a:hover{
-    background: black;
-    transition: .5s;
-}
-na ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
-.checkbtn{
-    font-size: 30px;
-    color:white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
+@media (min-width: 768px) {
+    /* Hide the hamburger menu */
+    #menu {
+      display: none;
+    }
+  
+    /* Display the navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    /* Adjust the position of the h2 */
+    main h2 {
+      text-align: center;
+      grid-column: 1 / -1; /* Span across all columns */
+    }
+  
+    /* Spread the navigation links to the right */
+    .navigation ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 20px;
+      padding:5px;
+    }
+  
+    /* Adjust the styles of the navigation links */
+    .navigation ul li {
+      margin-left: 20px; /* Add space between links */
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+    }
+  }
