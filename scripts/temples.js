@@ -1,18 +1,18 @@
 
-const hamburgerButton = document.getElementById("hamburger-menu");
-const sidebarMenu =document.getElementById("sidebarMenu");
+document.addEventListener('DOMContentLoaded', function () {
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+  
+    hamButton.addEventListener('click', () => {
+      navigation.classList.toggle('show');
+      hamButton.classList.toggle('open');
+    });
+  });
 
-hamburgerButton.addEventListener("click", () =>{
-    sidebarMenu.classList.toggle("show-menu");
-})
-
-
+// Output the current year in the footer's first paragraph
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
-const lastModifiedDate = new Date(document.lastModified);
-const options = {year: 'numeric', month: 'long', day:'numeric'};
-
-document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate.toLocaleDateString (undefined, options)}`;
-document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate.toLocaleTimeString (undefined, options)}`;
-
+// Output the date the document was last modified in the footer's second paragraph
+const lastModified = document.lastModified;
+document.getElementById("lastModified").textContent = "Last Modification: " + lastModified;
