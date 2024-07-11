@@ -1,3 +1,17 @@
+:root {
+  /* fonts */
+  --font-heading: Georgia, 'Times New Roman', Times, serif;
+  --font-page: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* colors */
+  --top-color: #04151f;
+  --top-color-light: #dfe9ff;
+  --text-light: white;
+  --bottom-color: #000000;
+  --bottom-color-light: #d5f0e3;
+  --bottom-color-medium: #89ae9c;
+}
+
 
   .navigation ul li a {
     color: white;
