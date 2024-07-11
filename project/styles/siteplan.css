@@ -21,6 +21,9 @@
   .navigation ul li a:hover {
     background-color: #555;
   }
+  body{
+    
+  }
   footer {
     background-color: #38b000;
     color: white;
