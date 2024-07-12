@@ -19,8 +19,15 @@ body{
 h1{
    color: black;
 }
+h1,h2, p{
+  text-align: center;
+}
 p{
   color: #000000;
+}
+ul li{
+  text-align: center;
+  list-style: none;
 }
 header{
   background-color: var(--top-color);
