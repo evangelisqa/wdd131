@@ -16,6 +16,12 @@ body{
   margin: 0;
   padding: 0;
 }
+h1{
+   color: black;
+}
+p{
+  color: #000000;
+}
 header{
   background-color: var(--top-color);
   color: white;
