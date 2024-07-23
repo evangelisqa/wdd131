@@ -146,9 +146,10 @@ li{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.gallery-item img{
-  width: 23%;
-  margin: 1%;
+img{
+  width: 450px;
+ height: 450px;
+ margin-left: 70px;
 }
 .home img{
   width: 100%;
@@ -204,10 +205,5 @@ footer{
     padding: 5px;
     border-radius: 10px;
     background-color: #38b000;
-  }
-}
-@media(max-width: 500px){
-  .gallery-item img{
-    width: 98%;
   }
 }
