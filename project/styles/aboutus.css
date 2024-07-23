@@ -113,14 +113,10 @@ body{
     display: flex;
     text-align: right;
   }
-  .image-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .image-container img{
-    width: 23%;
-    margin: 1%;
+  img{
+    width: 450px;
+    height: 450px;
+    margin-left: 70px;
   }
  h1{
     color: white;
@@ -164,7 +160,20 @@ footer{
 footer p{
     font-size: 20px;
 }
+.gallery-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+img{
+  width: 450px;
+ height: 450px;
+ margin-left: 70px;
+}
 @media(max-width: 800px){
+  .gallery-item img{
+    width: 48%;
+  }
     nav .mainMenu{
       height: 100vh;
       position: fixed; 
@@ -199,13 +208,4 @@ footer p{
       background-color: #38b000;
     }
   }
-  @media (max-width: 800px){
-    .gallery-item img{
-      width: 48%;
-    }
-}
-  @media(max-width: 500px){
-    .gallery-item img{
-      width: 98%;
-    }
-  }
+  

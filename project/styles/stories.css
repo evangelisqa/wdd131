@@ -163,20 +163,6 @@ body{
  p{
     text-align: center;
  }
- .share-button{
-    display:block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #ffffff;
-    background-color:var(--secondary-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
- }
- .share-button:hover{
-    background-color:var(--paragraph-color-on-white);
- }
  .form-container{
     max-width: 600px;
     margin: 0 auto;
@@ -212,7 +198,28 @@ body{
         background-color: #45a049;
     }
  }
+ .share-button{
+  display: flex;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color:var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.share-button:hover{
+  background-color:var(--paragraph-color-on-white);
+}
  @media (max-width:800px){
+  .gallery-item img{
+    width: 48%;
+  }
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -224,7 +231,8 @@ body{
         margin-right: 0;
         margin-bottom: 20px;
     }
-    .share-story-btn{
+    .share-button{
         width: 20%;
     }
  }
+ 
