@@ -1,24 +1,19 @@
-const shareBtn = document.querySelector('share-btn');
-shareBtn.addEventListener('click',() =>{
-alert('Thank you for your interest in sharing your story! Please contact us for more detail.');
-});
-function adjustButtonSize(){
-    const button = document.getElementById('shareButton');
-    if (window.innerWidth <= 600) {
-        button.style.width = '100%';
-        button.style.padding = '12px 20px';
-        button.style.fontSize='14px';
-    } 
-    else {
-        button.style.width = 'auto';
-        button.style.padding = '15px 32px';
-        button.style.fontSize = '16px';
-    }
-}
-window.addEventListener('resize', adjustButtonSize);
-window.addEventListener('load', adjustButtonSize);
+document.getElementById('storyForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-document.getElementById('storyForm').addEventListener('submit',function(event){
-    event.preventDefault();
-    alert('Thank you for sharing your story');
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const story = document.getElementById('story').value;
+    const photo = document.getElementById('photo').files[0];
+    const permission = document.querySelector('input[name="permission"]').checked;
+
+    // Validate form data (additional validation can be added here)
+    if (name && email && story && permission) {
+        alert('Thank you for your interest in sharing your story!');
+        // Here you can add code to handle the form submission, e.g., sending data to a server
+    } else {
+        alert('Please fill out all required fields.');
+    }
 });
+
