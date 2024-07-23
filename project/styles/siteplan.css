@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #001021;
+  --secondary-color: #004b23;
+  --accent1-color: #ffffff;
+  --accent2-color: #ccff33;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font:sans-serif;
+  --paragraph-font: Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #001021;   
+  --paragraph-color-on-white: #38b000;  
+  --paragraph-color-on-color:#ffffff;
+  --paragraph-background-color: #ccff33  ;
+  --nav-link-color: #eeeeee;
+  --nav-background-color: #e39774;
+  --nav-hover-link-color:#eeeeee;
+  --nav-hover-background-color: #396E94;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+div .site-purpose{
+  text-align: left;
+}
+h1, h2 {
+  color: white;
+  text-align: left;
+}
+p {
+  color: #34495e;
+  font-style: var(--paragraph-font);
+  font-size: 25px;
+}
+.color-sample {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+h1,h2, h3,p{
+  text-align: center;
+}
+.site-purpose p{
+  text-align: left;
+}
+.home p{
+  text-align: left;
+}
+h1{
+  background-color:var(--secondary-color);
+  color: white;
+  height: 100px;
+  padding-top: 50px;
+  width: 100%;
+}
+img{
+  height: 50%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+div{
+  text-align: center;
+  font-size: 20px;
+}
+
+nav{
+  text-align: center;
+}
+ul,li{
+  list-style: none;
+  text-align: center;
+  font-size: 25px;
+}
+footer{
+  background-color: var(--bottom-color-light);
+  height: 80px;
+  width: auto;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}

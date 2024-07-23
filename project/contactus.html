@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/contactus.css">
+    <script src="scripts/contactus.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><h2>🌷Nature🌷</h2></div>
+            <div class="openMenu"><i class="fas fa-bars"></i></div>
+        <h1>Connect With Nature</h1>
+        <nav>
+            <ul>
+                <li><a href=home.html#">Home</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="contact-form-container">
+            <form id="contact-form">
+                <h3>Contact Us</h3>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+              
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 😽  Evangelis Albesa, 😽 Canada
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
