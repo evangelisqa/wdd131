@@ -8,27 +8,36 @@
     <script src="scripts/share.js" defer></script>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Share Your Story</h2>
-        <form id="storyForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+ 
+  <main>
+    <main>
+        <div class="form-container">
+            <h2>Share Your Story</h2>
+            <form id="storyForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="story">Your Story:</label>
+                <textarea id="story" name="story" rows="6" required></textarea>
+    
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+    
+                <label>
+                    <input type="checkbox" name="permission" required> I give permission to share my story.
+                </label>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>  
+       </main> 
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+  </main>
+  <footer>
 
-            <label for="story">Your Story:</label>
-            <textarea id="story" name="story" rows="6" required></textarea>
-
-            <label for="photo">Upload Photo:</label>
-            <input type="file" id="photo" name="photo" accept="image/*">
-
-            <label>
-                <input type="checkbox" name="permission" required> I give permission to share my story.
-            </label>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>   
+  </footer>
 </body>
 </html>
