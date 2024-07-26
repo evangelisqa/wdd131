@@ -135,7 +135,7 @@ body{
     align-items: flex-start;
  }
  .images{
-    flex: 1;
+  flex: 1;
     width: 90%;
     float: right;
     padding-right: 20px;
