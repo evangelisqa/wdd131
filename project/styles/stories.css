@@ -176,6 +176,7 @@ body{
 .share-button:hover{
   background-color:var(--paragraph-color-on-white);
 }
+
  @media (max-width:800px){
   .gallery-item img{
     width: 48%;
